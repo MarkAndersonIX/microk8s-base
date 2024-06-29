@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-db
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-db
+  template:
+    metadata:
+      labels:
+        app: hello-db
+    spec:
+      containers:
+        - name: hello-db
+          image: markandersonix/hello_db:arm_latest
+          ports:
+            - containerPort: 3000
+            - containerPort: 3001
