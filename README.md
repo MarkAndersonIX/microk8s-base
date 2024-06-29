@@ -45,14 +45,7 @@ Setting up a microservices architecture on a cluster of Raspberry Pis using Ubun
     
 <!-- TODO -->
 8.  Deploy NGINX as a Reverse Proxy
-    Create a ConfigMap for NGINX configuration:
-        [nginx-config](nginx-config.yaml)
-    Apply the ConfigMap to the Kubernetes cluster:
-        kubectl apply -f nginx-config.yaml
-    Create a Deployment for NGINX:
-        [nginix-deployment](nginx/nginx-deployment.yaml)
-    Apply the Deployment to the Kubernetes cluster:
-        kubectl apply -f nginx-deployment.yaml
+    tbd.
 9.  Set Up Prometheus for Monitoring
     sudo snap install helm --classic
     helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
